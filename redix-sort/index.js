@@ -25,7 +25,7 @@ const redix = (arr, digits)=> {
     }
 }
 
-const arr = [21, 345, 13, 101, 50, 234, 1];
+const arr = [21, 345, 13, 12, 101, 101, 99, 50, 234, 1];
 const digits = 3;
 redix(arr, digits);
 console.log(arr);

@@ -6,8 +6,8 @@ const swap = (arr, i, j) => {
 const partition = (arr, start, end) => {
     const pivot = arr[start];
     let left = start;
-    let i = start;
     let right = end;
+    let i = start;
     while(i <= right) {
         // if in yellow then move left
         if(arr[i] < pivot) {

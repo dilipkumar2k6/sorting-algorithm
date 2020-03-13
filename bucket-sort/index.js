@@ -42,6 +42,7 @@ const sort = (arr) => {
         existingArray.push(num);   
         buckets[index] = existingArray;     
     }
+    // Apply insertion sort on each bucket
     let k=0;
     for(let i=0; i < buckets.length; i++) {
         if(buckets[i]) {
