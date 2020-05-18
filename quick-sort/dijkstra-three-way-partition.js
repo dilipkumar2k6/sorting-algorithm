@@ -9,13 +9,13 @@ const partition = (arr, start, end) => {
     let right = end;
     let i = start;
     while(i <= right) {
-        // if in yellow then move left
+        // if in left range then move left
         if(arr[i] < pivot) {
             swap(arr, left, i);
             left++;
             i++;
         }
-        // if in green then move right
+        // if in right range then move right
         else if(arr[i] > pivot) {
             swap(arr, i, right);
             right--;
