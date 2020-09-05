@@ -1,3 +1,5 @@
+# Asymptotic notations
+![](assets/asymptotic-notations.png)
 # Sort Related problems
 https://leetcode.com/problems/two-sum/
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
@@ -19,6 +21,9 @@ https://leetcode.com/problems/top-k-frequent-elements/description/
 
 # Count Sort
 https://leetcode.com/problems/sort-colors/description/
+
+# Count Sort on negative number
+https://www.ripublication.com/ijaer18/ijaerv13n1_28.pdf
 
 # Dutch Flag Sort
 https://leetcode.com/problems/sort-colors/description/
@@ -60,6 +65,11 @@ Following are differences
 - This is not in place algorithm i.e. it needs additional storage to store merged sorted array and then copy back into original array
 - This is recursive in nature
 
+# External Sort
+https://www.youtube.com/watch?v=Bp7fGofslng
+https://www.youtube.com/watch?v=ATK74YSzwxg&t=130s
+
+
 # Quick sort
 It is based on partitioning array into following three parts 
 1. First part with all elements less than second part
@@ -72,7 +82,7 @@ Following are few important points
 a. Lomuto partition - proceed from left to right in single direction
 b. Tony Hore - Proceed from both direction until both pointers crossed each other.
 c. Three way partitioning
-https://algs4.cs.princeton.edu/lectures/23DemoPartitioning.pdf
+https://algs4.cs.princeton.edu/lectures/demo/23DemoPartitioning.pdf
 # Heap Sort
 Heap sort is based on following
 - Priority Queue
@@ -85,6 +95,8 @@ Heap sort is based on following
 # Redix sort
 - It is based on stable sorting
 - It first starts with right most digit and apply counting sort then move to next digit towards left.
+# Bucket sort
+
 
 
 

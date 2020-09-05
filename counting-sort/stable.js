@@ -1,22 +1,23 @@
 const sort = (arr, range) => {
-    const count = new Array(range).fill(0); // know your range ahead
+    const runningFrequency = new Array(range).fill(0); // know your range ahead
 
-    // Phase 1: Build count array
+    // Phase 1: Initialize with frequency
     for(let i=0; i < arr.length; i++) {
         const num = arr[i];
-        count[num] = count[num] ? count[num] + 1 : 1;
+        runningFrequency[num]++;
     }
-    // Phase 2: Update count array for number position
-    for(let i=1; i < count.length; i++) {
-        count[i] += count[i-1]
+    // Phase 2: Calculate running frequency
+    for(let i=1; i < runningFrequency.length; i++) {
+        runningFrequency[i] += runningFrequency[i-1]
     }
     // Phase 3: Print number as per position
     const result = [];
     for(let i=0; i < arr.length; i++) {
         const num = arr[i];
-        const position = --count[num];
+        const position = --runningFrequency[num];
         result[position] = num;
     } 
+    // Phase 3: For inplace, otherwise return result
     for(let i=0; i < result.length; i++) {
         arr[i] = result[i];
     }       

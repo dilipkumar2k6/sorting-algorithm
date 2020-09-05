@@ -1,24 +1,20 @@
 
-const sort = (arr) => {
-    const counts = [];
+const sort = (arr, range) => {
+    const counts = new Array(range).fill(null).map(a => []);
     for(let i=0; i < arr.length; i++) {
-        const index = arr[i];
-        const existingArray = counts[index] || [];
-        existingArray.push(arr[i])
-        counts[index] = existingArray
+        const num = arr[i];
+        counts[num].push(num);
     }
     let k=0;
     for(let i=0; i < counts.length; i++) {
-      if(counts[i]) {
-        const existingArray = counts[i];
-          for(let j=0; j < existingArray.length; j++) {
-            arr[k] = existingArray[j];
-            k++;
-          }
-      }  
+      for(let j=0; j < counts[i].length; j++) {
+        arr[k] = counts[i][j];
+        k++;
+      }
     }
 }
 
-const arr = [92, 22, 1, 34, 5, 22, 92, 104, 9, 22, 11, 2, 8,100];
-sort(arr);
+const arr = [92, 22, 1, 34, 5, 22, 92, 104, 9, 22, 23, 24, 11, 2, 8,100];
+const range = 200;
+sort(arr, range);
 console.log(arr);

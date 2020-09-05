@@ -1,15 +1,15 @@
 const sort = (arr, range) => {
-    const count = new Array(range).fill(0); // know your range ahead
+    const frequencyMap = new Array(range).fill(0); // know your range ahead
 
     // Phase 1: Build count array
     for(let i=0; i < arr.length; i++) {
         const num = arr[i];
-        count[num] = count[num] ? count[num] + 1 : 1;
+        frequencyMap[num] ++;
     }
     // Phase 2: Update original array with sorted number
     let j=0;
-    for(let i=0; i < count.length; i++) {
-        for(let k=0; k < count[i]; k++) {
+    for(let i=0; i < frequencyMap.length; i++) {
+        for(let k=0; k < frequencyMap[i]; k++) {
             arr[j] = i;
             j++;
         }
