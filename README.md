@@ -1,16 +1,21 @@
 # Asymptotic notations
 ![](assets/asymptotic-notations.png)
+
 # Sort Related problems
 https://leetcode.com/problems/two-sum/
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+https://leetcode.com/problems/3sum/
+https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
+https://leetcode.com/problems/meeting-rooms/
 
 # Merge Sort
 https://leetcode.com/problems/merge-intervals/
+https://leetcode.com/problems/intersection-of-two-arrays/
+https://leetcode.com/problems/intersection-of-two-arrays-ii/
 https://leetcode.com/problems/intersection-of-three-sorted-arrays/
-https://leetcode.com/problems/3sum/
 https://leetcode.com/problems/merge-sorted-array/
-https://leetcode.com/problems/merge-k-sorted-lists/
 https://leetcode.com/problems/merge-two-sorted-lists/
+https://leetcode.com/problems/merge-k-sorted-lists/
 
 # Heap Sort
 https://leetcode.com/problems/kth-largest-element-in-a-stream/
@@ -65,9 +70,51 @@ Following are differences
 - This is not in place algorithm i.e. it needs additional storage to store merged sorted array and then copy back into original array
 - This is recursive in nature
 
-# External Sort
+
+ 
+# External Merge Sort
 https://www.youtube.com/watch?v=Bp7fGofslng
 https://www.youtube.com/watch?v=ATK74YSzwxg&t=130s
+
+Q. 5GB of data in file on disk with 1GB RAM, how you can sort it?
+- Can't load whole 5GB data into RAM therefore can't apply standard algorithm. 
+![](assets/big-file-sort.png)
+    - You can load 1GB data and sort it
+    - But you can't load next 1GB data and perform comparison to sort 2GB data
+    - If you keep loading sorted data from disk for comparison then it will take forever time using insertion sort
+    ![](assets/bigfile-sort-partial.png)
+How can we leverage merge sort to solve this problem?
+1. Step1:
+    - Break 5GB data into 1GB data of separate file
+      ![](assets/break-file-into-smaller.png)
+    - Load each file in RAM, sort it using any of the standard algorithm and then write into separate file on disk
+        ![](assets/sort-each-file.png)
+2. Step2:
+    - Take 150MB data from each file and load into RAM
+    - It will consume total of 750MB of RAM
+    - It will have 250MB left on RAM
+    ![](assets/load-150MB-for-each-file.png)
+    - Different type of merge sort
+        - Standard 2 way merge sort
+        ![](assets/2-way-merge-sort.png)
+        - 3 way merge sort
+        ![](assets/3-way-merge-sort.png)
+    - Perform `5` way merge on 5 array and keep writing into remaining `250MB` left RAM
+    ![](assets/5-way-merge-sort.png)
+    - Once `250GB` RAM is full write into disk and free up spaces
+    ![](assets/write-output.png)
+    - Once any of `5` merge pointer `i` reached to end then load next batch of `150MB` of data from that file and reset pointer variable
+    ![](assets/write-output.png)
+    - Keep doing it until file data is exhausted 
+    - Every time `250GB` RAM get full and data is written on disk with separate file name.
+    ![](assets/sorted-files.png)
+
+External merged sort is used when data can't be fit in memory. 
+
+
+
+# Sort Big File
+Imagine you have a 200 GB file with one string per line. Explain how you would sort the file. You cannot bring all the data into memory.
 
 
 # Quick sort
@@ -96,7 +143,25 @@ Heap sort is based on following
 - It is based on stable sorting
 - It first starts with right most digit and apply counting sort then move to next digit towards left.
 # Bucket sort
+https://www.geeksforgeeks.org/bucket-sort-2/
+https://www.programiz.com/dsa/bucket-sort
+- useful when input is uniformly distributed over a range
+- Example
+    - Sort a large set of floating point numbers which are in range from 0.0 to 1.0 and are uniformly distributed across the range. 
+    - Counting sort can not be applied here as we use keys as index in counting sort.
+- Algo
+```
+![](assets/https://media.geeksforgeeks.org/wp-content/uploads/BucketSort.png)
 
-
+1) Create n empty buckets (Or lists).
+2) Do following for every array element arr[i].
+    a) Insert arr[i] into bucket[n*array[i]]
+3) Sort individual buckets using insertion sort.
+4) Concatenate all sorted buckets.
+```
+# Inversion
+https://www.youtube.com/watch?v=owZhw-A0yWE
+https://www.hackerrank.com/challenges/ctci-merge-sort/problem
+https://leetcode.com/problems/global-and-local-inversions/
 
 

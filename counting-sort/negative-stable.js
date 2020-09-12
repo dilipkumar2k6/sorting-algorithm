@@ -6,7 +6,7 @@ const sort = (arr) => {
     const max = Math.max(...arr);
 
     const runningFrequencyMinus = new Array(min*-1+1).fill(0); 
-    const runningFrequencyPlus = new Array(max).fill(0);
+    const runningFrequencyPlus = new Array(max+1).fill(0);
 
     // Phase 1: Initialize with frequency
     for(let i=0; i < arr.length; i++) {
@@ -38,7 +38,7 @@ const sort = (arr) => {
         if(num >= 0) {
             const position = --runningFrequencyPlus[num];
             result[position] = num;
-        } else {
+        } else {    
             const position = --runningFrequencyMinus[num*-1];
             result[position] = num;            
         }

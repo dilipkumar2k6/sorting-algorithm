@@ -11,20 +11,20 @@ const partition = (arr, start, end) => {
     // swap start with random
     swap(arr, start, random);
     const pivot = arr[start];
-    let i = start;
-    let j = end;
-    while( i <= j) {        
-       if(arr[i] <= pivot) { // using = comparison helps to move pointer and also no need for i = start + 1
-           i++;
+    let left = start;
+    let right = end;
+    while( left <= right) {        
+       if(arr[left] <= pivot) { // using = comparison helps to move pointer and also no need for i = start + 1
+           left++;
        } 
-       else if(arr[j] > pivot) {
-           j--;
+       else if(arr[right] > pivot) {
+           right--;
        } else {
-           swap(arr, i, j);
+           swap(arr, left, right);
        }
     }
-    swap(arr, start, j);
-    return j;
+    swap(arr, start, right);
+    return right;
 }
 
 const quick = (arr, start, end) => {
