@@ -53,7 +53,7 @@ const radixSortWrapper = nums => {
 const bucketSort = (nums) => {
     const bucketSize = nums.length;
     const max = Math.max(...nums);
-    const optimalSizeOfEachBucket = max/bucketSize; 
+    const optimalSizeOfEachBucket = max/bucketSize;  // This is important, this has to be decimal value
     
     // create bucket
     const bucket = new Array(bucketSize).fill(null).map(a => []);
