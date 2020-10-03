@@ -53,13 +53,6 @@ https://leetcode.com/problems/global-and-local-inversions/
 https://leetcode.com/problems/wiggle-sort
 https://leetcode.com/problems/wiggle-sort-ii/
 
-# Intervals
-https://leetcode.com/problems/meeting-rooms/
-https://leetcode.com/problems/meeting-rooms-ii/
-https://leetcode.com/problems/merge-intervals/
-https://leetcode.com/problems/insert-interval/
-https://leetcode.com/problems/interval-list-intersections/
-https://leetcode.com/problems/employee-free-time/
 
 
 
