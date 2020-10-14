@@ -14,11 +14,15 @@ https://leetcode.com/problems/intersection-of-two-arrays-ii/
 https://leetcode.com/problems/intersection-of-three-sorted-arrays/
 https://leetcode.com/problems/merge-sorted-array/
 https://leetcode.com/problems/merge-two-sorted-lists/
+https://leetcode.com/problems/squares-of-a-sorted-array/
+https://leetcode.com/problems/sort-list/
 
 # Heap Sort
 https://leetcode.com/problems/kth-largest-element-in-a-stream/
 https://leetcode.com/problems/find-median-from-data-stream/
 https://leetcode.com/problems/distant-barcodes/
+https://leetcode.com/problems/reorganize-string/submissions/
+https://leetcode.com/problems/rearrange-string-k-distance-apart/
 
 # Quick Sort
 https://leetcode.com/problems/k-closest-points-to-origin/
