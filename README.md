@@ -10,8 +10,8 @@ https://leetcode.com/problems/3sum/
 
 https://leetcode.com/problems/4sum/
 
-https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
-
+# Selection sort
+https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 # Merge Sort
 https://leetcode.com/problems/intersection-of-two-arrays/
 
@@ -37,6 +37,9 @@ https://leetcode.com/problems/distant-barcodes/
 https://leetcode.com/problems/reorganize-string/submissions/
 
 https://leetcode.com/problems/rearrange-string-k-distance-apart/
+
+https://leetcode.com/problems/course-schedule-iii/
+
 
 # Quick Sort
 https://leetcode.com/problems/k-closest-points-to-origin/
@@ -90,6 +93,14 @@ https://leetcode.com/problems/find-k-th-smallest-pair-distance/
 https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/
 
 https://leetcode.com/problems/k-th-smallest-prime-fraction/
+
+# Swap related problems
+https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
+
+# Reverse related problems
+https://leetcode.com/problems/pancake-sorting/
+https://leetcode.com/problems/max-chunks-to-make-sorted/
+https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 
 
 
