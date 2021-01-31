@@ -97,9 +97,13 @@ https://leetcode.com/problems/k-th-smallest-prime-fraction/
 # Swap related problems
 https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
 
+https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/
+
 # Reverse related problems
 https://leetcode.com/problems/pancake-sorting/
+
 https://leetcode.com/problems/max-chunks-to-make-sorted/
+
 https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 
 
