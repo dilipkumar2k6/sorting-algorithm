@@ -106,6 +106,8 @@ https://leetcode.com/problems/max-chunks-to-make-sorted/
 
 https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 
+# Sleep sort
+https://www.geeksforgeeks.org/sleep-sort-king-laziness-sorting-sleeping/
 
 
 
