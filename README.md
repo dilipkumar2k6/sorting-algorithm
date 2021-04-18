@@ -70,6 +70,8 @@ https://leetcode.com/problems/merge-k-sorted-lists/
 # Bucket sort
 https://leetcode.com/problems/car-pooling/
 
+https://leetcode.com/problems/campus-bikes/
+
 # Inversion
 https://www.youtube.com/watch?v=owZhw-A0yWE
 
