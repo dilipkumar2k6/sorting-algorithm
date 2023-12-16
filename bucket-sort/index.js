@@ -1,59 +1,40 @@
-const sort = (arr) => {
-    const buckets = [];
-    for(let i=0; i < arr.length; i++) {
-        const num = arr[i];
-        let index;
-        if(-20 <= num && num < 0) {
-            index = 0;
-        }
-        else if(0 <= num && num < 10) {
-            index = 1;
-        }
-        else if(10 <= num && num < 20) {
-            index = 2;
-        }
-        else if(20 <= num && num < 30) {
-            index = 3;
-        }
-        else if(30 <= num && num < 40) {
-            index = 4;
-        }
-        else if(40 <= num && num < 50) {
-            index = 5;
-        }
-        else if(50 <= num && num < 60) {
-            index = 6;
-        }
-        else if(60 <= num && num < 70) {
-            index = 7;
-        }
-        else if(70 <= num && num < 80) {
-            index = 8;
-        }
-        else if(80 <= num && num < 90) {
-            index = 9;
-        }
-        else if(90 <= num && num < 100) {
-            index = 10;
-        } else {
-            throw Error('Not supported');
-        }
-        const existingArray = buckets[index] || [];
-        existingArray.push(num);   
-        buckets[index] = existingArray;     
-    }
-    // Apply insertion sort on each bucket
-    let k=0;
-    for(let i=0; i < buckets.length; i++) {
-        if(buckets[i]) {
-            const existingArray = buckets[i];
-            for(let j=0; j< existingArray.length; j++) {
-                arr[k] = existingArray[j];
-                k++;
-            }
-        }
-    }
+const bucketSize = 10;
+const getBucket = (arr)=> {
+    const max = Math.max(...arr);
+    const min = Math.min(...arr);
+    const divider = Math.ceil((max + 1)/bucketSize);
+    const bucket =  new Array(bucketSize).fill(0).map(a => []);
+    return [divider, bucket];
 }
-const arr = [56, 12, 84, 28, 0,-13, 47, 94, 31, 12];
-sort(arr);
+
+const getBucketIndex = (num, divider) => {
+    return Math.floor( num / divider);
+}
+const bucketSort = arr => {
+    const n = arr.length;
+    // Get bucket
+    const [divider, bucket] = getBucket(arr);
+
+    // Scatter nums i.e. insert elements into their respective buckets
+    for (let i=0; i < n; i++) {
+        const num = arr[i];
+        const index = getBucketIndex(num, divider);   
+        bucket[index].push(num);     
+    }
+    // Sort each bucket
+    for (let i=0; i < bucket.length; i++) {
+        bucket[i].sort((a,b)=>a-b); // or write custom sort algorithm eg, inserstion sort in above step
+    }
+    console.log({bucket})
+    // Gather buckets
+    let k=0;
+    for (let i=0; i < bucket.length;i++) {
+        for (let j=0; j < bucket[i].length; j++) {
+            arr[k++] = bucket[i][j];
+        }
+    }
+
+}
+const arr = [98,2,44,4,354,9,45,8,5,567,23,67,68,1,1,2,9];
+bucketSort(arr);
 console.log(arr);
