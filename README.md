@@ -14,6 +14,7 @@ https://leetcode.com/problems/largest-values-from-labels/
 
 # Selection sort
 https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
+
 # Merge Sort
 https://leetcode.com/problems/intersection-of-two-arrays/
 
@@ -29,6 +30,35 @@ https://leetcode.com/problems/squares-of-a-sorted-array/
 
 https://leetcode.com/problems/sort-list/
 
+## Sort Big File
+Imagine you have a 200 GB file with one string per line. Explain how you would sort the file. You cannot bring all the data into memory.
+
+## External Merge Sort
+https://leetcode.com/problems/merge-k-sorted-lists/
+
+# Quick Sort
+https://leetcode.com/problems/kth-largest-element-in-an-array/
+
+https://leetcode.com/problems/k-closest-points-to-origin/
+
+https://leetcode.com/problems/top-k-frequent-elements/description/
+
+## Dutch Flag Sort
+https://leetcode.com/problems/sort-colors/description/
+
+## More kth related problems
+https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+
+https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
+
+https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/
+
+https://leetcode.com/problems/find-k-th-smallest-pair-distance/
+
+https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/
+
+https://leetcode.com/problems/k-th-smallest-prime-fraction/
+
 # Heap Sort
 https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
@@ -42,28 +72,13 @@ https://leetcode.com/problems/rearrange-string-k-distance-apart/
 
 https://leetcode.com/problems/course-schedule-iii/
 
-
-# Quick Sort
-https://leetcode.com/problems/k-closest-points-to-origin/
-
-https://leetcode.com/problems/top-k-frequent-elements/description/
-
 # Count Sort
 https://leetcode.com/problems/sort-colors/description/
 
 https://leetcode.com/problems/height-checker/
 
-# Count Sort on negative number
+## Count Sort on negative number
 https://www.ripublication.com/ijaer18/ijaerv13n1_28.pdf
-
-# Dutch Flag Sort
-https://leetcode.com/problems/sort-colors/description/
-
-# Sort Big File
-Imagine you have a 200 GB file with one string per line. Explain how you would sort the file. You cannot bring all the data into memory.
-
-# External Merge Sort
-https://leetcode.com/problems/merge-k-sorted-lists/
 
 # Radix sort
 
@@ -85,21 +100,6 @@ https://leetcode.com/problems/wiggle-sort
 https://leetcode.com/problems/wiggle-sort-ii/
 
 
-# More kth related problems
-https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
-
-https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
-
-https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/
-
-https://leetcode.com/problems/find-k-th-smallest-pair-distance/
-
-
-
-https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/
-
-https://leetcode.com/problems/k-th-smallest-prime-fraction/
-
 # Swap related problems
 https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/
 
@@ -114,8 +114,3 @@ https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 
 # Sleep sort
 https://www.geeksforgeeks.org/sleep-sort-king-laziness-sorting-sleeping/
-
-
-
-
-
